@@ -1,22 +1,18 @@
 html, body
-  padding: 0
-  margin: 0
   height: 100%
 
 *
   box-sizing: border-box
+  margin: 0
+  padding: 0
 
 nav
-  padding: 0
-  margin: 0
   position: absolute
   bottom: 0
   height: percentage(1/7)
   max-height: 140px
   width: 100%
   #progress
-    margin: 0
-    padding: 0
     width: 20%
     height: 3px
     transition: width 0.7s
@@ -24,20 +20,16 @@ nav
     background-color: rgb(60,163,225)
     box-shadow: 0 0 5px rgb(60,163,255)
   #navbar
-    margin: 0
-    padding: 0
     width: 100%
     background-color: rgba(0,0,0,0.4)
     height: calc(100% - 3px)
     ul
-      margin: 0
-      padding: 0
       height: 100%
       width: 100%
       display: flex
       justify-content: center
       align-items: center
-      div
+      span
         display: inline-block
         width: 20%
         text-align: center
@@ -56,34 +48,24 @@ nav
           color: rgb(230,230,230)
           padding: 0.3em
 section
-  margin: 0
-  padding: 0
   height: 100%
   justify-content: center
   align-items: center
   display: none
+  background-size: cover
 section#home
-  background:
-    image: url('/images/headerbg.jpg')
-    size: cover
+  background-image: url('/images/headerbg.jpg')
   div
     text-align: center
     color: white
-    padding: 0
-    margin: 0
     h1
-      font-family: Pacifico, cursive
+      font-family: Pacifico, cursive, sans-serif
       font-size: 2em
-      padding: 0
-      margin: 0
     h2
       color: white
       font-size: 1.5em
       font-family: Quicksand, sans-serif
       font-weight: 100
-      padding: 0
-      margin: 0
-
   .nextPage
     position: absolute
     right: 10px
@@ -106,27 +88,16 @@ section#home
       transition: padding 0.5s
       transition-timing-function: ease-out
 section#about
-  background:
-    image: url('/images/aboutbg.jpg')
-    size: cover
-  justify-content: center
-  align-items: center
-  margin: 0
-  padding: 0
+  background-image: url('/images/aboutbg.jpg')
   .wrapper
     width: 100%
     max-width: 1000px
     height: 100%
     max-height: 250px
-    padding: 0
-    margin: 0
     padding: 1em
     border-radius: 3px
-    background:
-      color: rgba(255,255,255,0.8)
+    background-color: rgba(255,255,255,0.8)
     .profileImage
-      padding: 0
-      margin: 0
       height: 100%
       width: calc(20% - 1px)
       float: left
@@ -135,51 +106,29 @@ section#about
       align-items: center
       border-right: 1px solid rgb(60,163,225)
       img
-        margin: 0
-        padding: 0
         border-radius: 50%
         border: 1px solid white
         width: 80%
     .content
       width: 80%
-      padding: 0
-      margin: 0
       float: left
       p
         margin-left: 0.5em
         color: #222
 section#portfolio
-  background:
-    image: url('/images/portfoliobg.jpeg')
-    size: cover
-  justify-content: center
-  align-items: center
-  padding: 0
-  margin: 0
+  background-image: url('/images/portfoliobg.jpeg')
   .showcase
-    background:
-      color: rgba(255, 255, 255, 0.8)
-    padding: 0
-    margin: 0
+    background-color: rgba(255, 255, 255, 0.8)
     width: 80%
     height: percentage(5/7)
-    margin:
-      bottom: percentage(1/14)
+    margin-bottom: percentage(1/14)
     border-radius: 4px
   .projectDescription
-    margin: 0
-    padding: 0
-    z-index: 10000
+    z-index: 1000
     height: 100%
     width: 100%
     display: none
 section#contact
-  background:
-    image: url('/images/contactbg.jpg')
-    size: cover
-  justify-content: center
-  align-items: center
-  padding: 0
-  margin: 0
+  background-image: url('/images/contactbg.jpg')
 .activeSection
   display: flex
